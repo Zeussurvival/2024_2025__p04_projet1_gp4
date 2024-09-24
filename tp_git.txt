@@ -1,0 +1,38 @@
+*) Dans chaque projet:
+
+  - Chacun des acteurs du projet créé un fichier parmi les fichiers
+    main.py, data.py, tools.py
+
+  - chaque acteur :
+  
+    - indique à GIT que le fichier file_name doit être suivi, avec la commande
+      << git add file_name >>,
+    
+    - fait un commit ayant pour message "Creating file_name" avec la commande
+      << git commit -m "Creating file_name" >>,
+    
+    - récupère ce qui serait déjà sur le serveur distant avec la commande
+      << git fetch >> (ou << git pull >>),
+      
+    - envoie son travail sur le serveur distant avec la commande
+      << git push >>,
+
+    - continue en écrivant des lignes de code dans son fichier,
+
+    - refait la séquence add, commit, push, pull
+
+
+*) Création et Gestion de conflits:
+
+    Après avoir vérifié qu'ils sont à jour par rapport au dépôt, avec la commande
+    << git status >>, les acteurs du projet vont modifier le même fichier data.py et observer
+    les éventuels conflits créés.
+
+  - Test n°1 : chaque acteur écrit une ligne dans le fichier data.py
+    (par exemple a = 2 pour l'acteur n°1, b = 3 pour l'acteur n°3 et c = 7 pour le dernier)
+    envoyer sur GitHub (cela suppose que vous avez sauvé data.py, vous avez fait un add,
+    un commit et un push). Y-a-t-il eu des conflits ?
+
+  - Test n°2 : deux acteurs modifient la même ligne dans data.py, puis fait la séquence SACP.
+    Y-a-t-il eu des conflits ?
+    
