@@ -1,3 +1,3 @@
-Groupe : Emil, Adam, Maxence
+Groupe : Emil, Adam, Maxence (at now, he's absent)
 
 followed by Jim Pioche
