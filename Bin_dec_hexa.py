@@ -35,42 +35,33 @@ def reverse_chain(chain):
         reversed_chain = c + reversed_chain
     return reversed_chain
 
-# Pour les fonctions
-def convertisseur_bin_hex_to_dec(string,base):
-    # binaire d'abord
+# Le nom indique ce quel fait
+def convertisseur_hex_to_dec(string):
     chars = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"]
     number = 0
     trouver = False
-    if base == 2:
-        for i in range(len(string)):
-            if string[i] == "1":
-                number += 2 ** i
     
-    # if base == 16:
-    #     string = reverse_chain(string)
-    #     for i in range(len(string)):
-    #         for a in range(len(chars)):
-    #             print(number,a,i)
-    #             if string[i] == chars[a]:
-    #                 print(number + a ** i)
-    #                 number += a ** i
-    if base == 16:
-        string_fin = reverse_chain(string)
-        for str in range(len(string_fin)):
-            while trouver == False:
-                for char in range(len(chars)):
-                    if string_fin[str] == chars[char]:
-                        print(char,str)
-                        number += char * (16**str)
-                        print(number)
-                        trouver = False
-                trouver = True
-            trouver = False
 
-
+    string_fin = reverse_chain(string)
+    for str in range(len(string_fin)):
+        while trouver == False:
+            for char in range(len(chars)):
+                if string_fin[str] == chars[char]:
+                    print(char,str)
+                    number += char * (16**str)
+                    print(number)
+                    trouver = True
+            trouver = True
+        trouver = False
     return number
 
-print(convertisseur_bin_hex_to_dec("ba",16))
+def convertisseur_dec_to_hex(string):
+    pass
+
+def convertisseur_bianire_to_hex(string):
+    pass
+
+print(convertisseur_hex_to_dec("ba",16))
 
 
 
