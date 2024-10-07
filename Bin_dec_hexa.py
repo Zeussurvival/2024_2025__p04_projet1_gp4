@@ -43,25 +43,48 @@ def convertisseur_hex_to_dec(string):
     
 
     string_fin = reverse_chain(string)
-    for str in range(len(string_fin)):
+    for stri in range(len(string_fin)):
         while trouver == False:
             for char in range(len(chars)):
-                if string_fin[str] == chars[char]:
-                    print(char,str)
-                    number += char * (16**str)
+                if string_fin[stri] == chars[char]:
+                    print(char,stri)
+                    number += char * (16**stri)
                     print(number)
                     trouver = True
             trouver = True
         trouver = False
     return number
 
+
 def convertisseur_dec_to_hex(string):
+    chars = ["0","1","2","3","4","5","6","7","8","9"]
+    chars_hex = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"]
+    string_number = ""
+    number = 0
+    trouver = False
+    puissance = 0
+
+    for stri in range(len(string)):
+        for char in range(len(chars)):
+            if chars[char] == string[stri]:
+                number += char * (10**stri)
+
+    number = int(reverse_chain(str(number)))
+    number_test = number
+
+    while number_test / 16 > 1:
+        for i in range(len(chars_hex)):
+            string_number += f"{chars_hex[number_test]}"
+    
+        number_test /= 16
+        puissance += 1
+
+    return number_test
+
+def convertisseur_binaire_to_hex(string):
     pass
 
-def convertisseur_bianire_to_hex(string):
-    pass
-
-print(convertisseur_hex_to_dec("ba",16))
+print(convertisseur_dec_to_hex("25"))
 
 
 
