@@ -57,14 +57,16 @@ def convertir_nombres():
     
     choix_sortie = int(input("Votre choix (1/2/3) : "))
 
-    if choix_sortie == 1:
-        print(f"Le nombre en binaire est : {decimal_vers_binaire(nombre_decimal)}")
-    elif choix_sortie == 2:
-        print(f"Le nombre en décimal est : {nombre_decimal}")
-    elif choix_sortie == 3:
-        print(f"Le nombre en hexadécimal est : {decimal_vers_hexadecimal(nombre_decimal)}")
-    else:
-        print("Choix invalide.")
+    while True:
+        if choix_sortie == 1:
+            print(f"Le nombre en binaire est : {decimal_vers_binaire(nombre_decimal)}")
+        elif choix_sortie == 2:
+            print(f"Le nombre en décimal est : {nombre_decimal}")
+        elif choix_sortie == 3:
+            print(f"Le nombre en hexadécimal est : {decimal_vers_hexadecimal(nombre_decimal)}")
+        else:
+            print("Choix invalide.")
+            continue
 
 if __name__ == "__main__":
     convertir_nombres()
