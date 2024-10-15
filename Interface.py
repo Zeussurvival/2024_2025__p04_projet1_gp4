@@ -2,7 +2,7 @@ import pygame
 pygame.init()
 screen_width = 1280
 screen_height = 720
-image_icone = pygame.image.load(f"\blabla.png")
+image_icone = pygame.image.load(r"\2024_25_p04_projet1_gp4\blabla.png")
 pygame.display.set_caption("CON-CONVERTISSEUR")
 pygame.display.set_icon(image_icone)
 screen = pygame.display.set_mode((screen_width, screen_height))
