@@ -1,8 +1,12 @@
 import pygame
+import os
 pygame.init()
+reper = os.getcwd()
+
 screen_width = 1280
 screen_height = 720
-image_icone = pygame.image.load(r"\2024_25_p04_projet1_gp4\blabla.png")
+reper_icone = f"{reper}" + "/" + "blabla.png"
+image_icone = pygame.image.load(f"{reper_icone}")
 pygame.display.set_caption("CON-CONVERTISSEUR")
 pygame.display.set_icon(image_icone)
 screen = pygame.display.set_mode((screen_width, screen_height))
@@ -13,6 +17,9 @@ color_fond = (243,60,21)
 WHITE = (255,255,255)
 white_rect_haut = (25,25,screen_width - 50,100)
 
+base_start_box = (25,150,400,50)
+base_end_box = (screen_width - 425,150,400,50)
+
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -21,7 +28,8 @@ while running:
     # INTERFACE
     screen.fill(color_fond)
     pygame.draw.rect(screen,WHITE,white_rect_haut)
-
+    pygame.draw.rect(screen,WHITE,base_start_box)
+    pygame.draw.rect(screen,WHITE,base_end_box)
 
     pygame.display.flip()
 
