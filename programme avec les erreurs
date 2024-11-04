@@ -92,7 +92,7 @@ if __name__ == "__main__":
 
 
 # erreur 1 : le nombre choisi pour la base d entrée est different de 1,2,3
-# erreur 2 :la base d entrée est le bianire mais le nombre donné est pas en binaire 
-# erreur 3 :la base d entrée est le décimal mais le nombre donné est pas un nombre en base decimal 
-# erreur 4 :la base d entrée est l'hexadésimal mais le nombre donné est pas en hexadecimal 
+# erreur 2 : la base d entrée est le bianire mais le nombre donné est pas en binaire 
+# erreur 3 : la base d entrée est le décimal mais le nombre donné est pas en decimal 
+# erreur 4 : la base d entrée est l'hexadécimal mais le nombre donné est pas en hexadecimal 
 # erreur 5 : la base de sortie choisi est differente de 1,2,3 
