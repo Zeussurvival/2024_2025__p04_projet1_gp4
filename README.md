@@ -1,8 +1,8 @@
 Groupe : Emil, Adam, Maxence
 followed by Jim Pioche
 
-Ce projet a pour but de convertir un nombre binaire, décimal ou héxadécimal en un nombre bianire, décimal ou héxadécimal.
-Ce projet a été fait dans le but d'un cours de NSI de première.
+-Ce projet a pour but de convertir un nombre binaire, décimal ou héxadécimal en un nombre bianire, décimal ou héxadécimal.
+-Ce projet a été fait dans le but d'un cours de NSI de première.
 
  
  
