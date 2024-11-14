@@ -2,7 +2,7 @@ Groupe : Emil, Adam, Maxence
 followed by Jim Pioche
 
 Ce projet a pour but de convertir un nombre binaire, décimal ou héxadécimal en un nombre bianire, décimal ou héxadécimal.
- -Ce projet a été fait dans le but d'un projet de NSI de première.
+ - Ce projet a été fait dans le but d'un projet de NSI de première.
  
 Le fichier "projet_python_final" contient les 2 fichiers python nécessaire au lancement du programme:
   - Un programme python nommé "tools.py" qui va contenir les différentes fonction nécéssaire a la convertion des nombres et pour l'affichage du tag.
