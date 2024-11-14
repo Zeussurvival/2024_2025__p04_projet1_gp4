@@ -1,4 +1,5 @@
 from tools import *
+text_choisi = 1
 
 def convertir_nombres():
     while True:
@@ -62,7 +63,7 @@ def Convertisseur_infini():
     while True:
         convertir_nombres()
         print("\n\n\n")
-        print(cool_text1())
+        print(cool_text(text_choisi))
         print("\n\n")
 
 #  _____                           _   _                         
@@ -81,5 +82,5 @@ def Convertisseur_infini():
 
 
 if __name__ == "__main__":
-    print(cool_text1())
+    print(cool_text(text_choisi))
     Convertisseur_infini()
