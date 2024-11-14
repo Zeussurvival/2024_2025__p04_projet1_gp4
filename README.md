@@ -6,7 +6,7 @@ followed by Jim Pioche
  
 Le fichier "projet_python_final" contient les 2 fichiers python nécessaire au lancement du programme:
   - Un programme python nommé "tools.py" qui va contenir les différentes fonction nécéssaire a la convertion des nombres et pour l'affichage du tag.
-  - Un programme python nommé "__main__.py" qui ne contient rien de particulier a part le fait qu'il lance la fonction convertir a chaque fin de celle-ci.
+  - Un programme python nommé " __main __.py" qui ne contient rien de particulier a part le fait qu'il lance la fonction convertir a chaque fin de celle-ci.
 
 Le programme tools.py contient 2 groupes de fonctions:
  - Les convertisseurs brut:
