@@ -10,7 +10,9 @@ Le fichier "projet_python_final" contient les 2 fichiers python nécessaire au l
 
 Le programme tools.py contient 2 groupes de fonctions:
  - Les convertisseurs brut:
+   
    -> Binaire_decimal(), decimal_binaire() et hexadecimal_decimal(), decimal_hexadecimal()
+   
    -> Pour passer du binaire au hexadecimal on converti le nombre binaire en decimal des qu'on l'obtient pour le transformer du decimal au hexadecimal
  - Les affichages:
    
