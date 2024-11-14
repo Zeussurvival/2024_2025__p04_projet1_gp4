@@ -19,3 +19,6 @@ Le programme tools.py contient 2 groupes de fonctions:
    -> La fonction convertir_nombres() s'occupent de (presque) tout l'affichage et s'occupent de vérifier si les entrées sont correct sinon renvoie un message d'erreur et continue le programme
    
    -> Les fonctions cool_text1() et cool_text2() s'occupent de l'affichage du tag
+
+Le programme __main __.py contient une seule chose:
+  - Une boucle qui relance le convertisseur
