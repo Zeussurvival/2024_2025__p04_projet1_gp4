@@ -36,14 +36,14 @@ def convertir_nombres():
     print("2. Décimal (base 10)")
     print("3. Hexadécimal (base 16)")
     
-    choix_entree = int(input("Votre choix (1/2/3) : "))
+    choix_entree = input("Votre choix (1/2/3) : ")
 
-    if choix_entree == 1:
+    if choix_entree == "1":
         nombre_binaire = input("Entrez le nombre en binaire : ")
         nombre_decimal = binaire_vers_decimal(nombre_binaire)
-    elif choix_entree == 2:
+    elif choix_entree == "2":
         nombre_decimal = int(input("Entrez le nombre en décimal : "))
-    elif choix_entree == 3:
+    elif choix_entree == "3":
         nombre_hexadecimal = input("Entrez le nombre en hexadécimal : ")
         nombre_decimal = hexadecimal_vers_decimal(nombre_hexadecimal)
     else:
@@ -55,18 +55,18 @@ def convertir_nombres():
     print("2. Décimal (base 10)")
     print("3. Hexadécimal (base 16)")
     
-    choix_sortie = int(input("Votre choix (1/2/3) : "))
+    choix_sortie = input("Votre choix (1/2/3) : ")
 
-    while True:
-        if choix_sortie == 1:
-            print(f"Le nombre en binaire est : {decimal_vers_binaire(nombre_decimal)}")
-        elif choix_sortie == 2:
-            print(f"Le nombre en décimal est : {nombre_decimal}")
-        elif choix_sortie == 3:
-            print(f"Le nombre en hexadécimal est : {decimal_vers_hexadecimal(nombre_decimal)}")
-        else:
-            print("Choix invalide.")
-            continue
+
+    if choix_sortie == "1":
+        print(f"Le nombre en binaire est : {decimal_vers_binaire(nombre_decimal)}")
+    elif choix_sortie == "2":
+        print(f"Le nombre en décimal est : {nombre_decimal}")
+    elif choix_sortie == "3":
+        print(f"Le nombre en hexadécimal est : {decimal_vers_hexadecimal(nombre_decimal)}")
+    else:
+        print("Choix invalide.")
+        
 
 if __name__ == "__main__":
     convertir_nombres()
